@@ -1,0 +1,6 @@
+C:\Users\ben\Documents\PSoC Creator\CHEAP_PWM_PSOC\Design01.cydsn\Design01.cyprj|ce5596bc-39e3-4349-9eea-682e10198812
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|ba33276e-e221-4cb5-b99d-ddac0261fea7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|b37ef7a3-56fc-46f3-809c-796be5910a07
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|afcf5ed6-049a-4225-b05f-368d446f749e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|34595a68-dbaa-4842-b1f5-5c7fe48260d7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|edba1901-daba-49c2-ada3-46610bfcfb12

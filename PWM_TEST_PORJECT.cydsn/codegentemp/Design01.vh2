@@ -1,0 +1,1088 @@
+--
+--	Conversion of Design01.v to vh2:
+--
+--	Cypress Semiconductor - WARP Version 6.3 IR 41
+--	Wed Apr 12 14:47:39 2017
+--
+
+USE cypress.cypress.all;
+USE cypress.rtlpkg.all;
+ENTITY top_RTL IS
+ATTRIBUTE part_name of top_RTL:TYPE IS "cpsoc3";
+END top_RTL;
+--------------------------------------------------------
+ARCHITECTURE R_T_L OF top_RTL IS
+SIGNAL Net_52 : bit;
+SIGNAL \cheap_pwm_1:period_counter_4\ : bit;
+SIGNAL Net_56 : bit;
+SIGNAL Net_55_3 : bit;
+SIGNAL Net_55_2 : bit;
+SIGNAL Net_55_1 : bit;
+SIGNAL Net_55_0 : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_1_4\ : bit;
+SIGNAL \cheap_pwm_1:period_counter_3\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_1_3\ : bit;
+SIGNAL \cheap_pwm_1:period_counter_2\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_1_2\ : bit;
+SIGNAL \cheap_pwm_1:period_counter_1\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_1_1\ : bit;
+SIGNAL \cheap_pwm_1:period_counter_0\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_1_0\ : bit;
+SIGNAL \cheap_pwm_1:up_time_6\ : bit;
+SIGNAL Net_35 : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_2_6\ : bit;
+SIGNAL \cheap_pwm_1:up_time_5\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_2_5\ : bit;
+SIGNAL \cheap_pwm_1:up_time_4\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_2_4\ : bit;
+SIGNAL \cheap_pwm_1:up_time_3\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_2_3\ : bit;
+SIGNAL \cheap_pwm_1:up_time_2\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_2_2\ : bit;
+SIGNAL \cheap_pwm_1:up_time_1\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_2_1\ : bit;
+SIGNAL \cheap_pwm_1:up_time_0\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_2_0\ : bit;
+SIGNAL \cheap_pwm_1:down_time_6\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_3_6\ : bit;
+SIGNAL \cheap_pwm_1:down_time_5\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_3_5\ : bit;
+SIGNAL \cheap_pwm_1:down_time_4\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_3_4\ : bit;
+SIGNAL \cheap_pwm_1:down_time_3\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_3_3\ : bit;
+SIGNAL \cheap_pwm_1:down_time_2\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_3_2\ : bit;
+SIGNAL \cheap_pwm_1:down_time_1\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_3_1\ : bit;
+SIGNAL \cheap_pwm_1:down_time_0\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_3_0\ : bit;
+SIGNAL \cheap_pwm_1:all_time_7\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_4_7\ : bit;
+SIGNAL \cheap_pwm_1:all_time_6\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_4_6\ : bit;
+SIGNAL \cheap_pwm_1:all_time_5\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_4_5\ : bit;
+SIGNAL \cheap_pwm_1:all_time_4\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_4_4\ : bit;
+SIGNAL \cheap_pwm_1:all_time_3\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_4_3\ : bit;
+SIGNAL \cheap_pwm_1:all_time_2\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_4_2\ : bit;
+SIGNAL \cheap_pwm_1:all_time_1\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_4_1\ : bit;
+SIGNAL \cheap_pwm_1:all_time_0\ : bit;
+SIGNAL \cheap_pwm_1:add_vv_vv_MODGEN_4_0\ : bit;
+SIGNAL \cheap_pwm_1:pwm\ : bit;
+SIGNAL \cheap_pwm_1:cmp_vv_vv_MODGEN_5\ : bit;
+SIGNAL Net_2_3 : bit;
+SIGNAL Net_2_2 : bit;
+SIGNAL Net_2_1 : bit;
+SIGNAL Net_2_0 : bit;
+SIGNAL \cheap_pwm_1:cmp_vv_vv_MODGEN_6\ : bit;
+SIGNAL Net_4 : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:a_4\ : bit;
+SIGNAL \cheap_pwm_1:MODIN1_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:a_3\ : bit;
+SIGNAL \cheap_pwm_1:MODIN1_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:a_2\ : bit;
+SIGNAL \cheap_pwm_1:MODIN1_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:a_1\ : bit;
+SIGNAL \cheap_pwm_1:MODIN1_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:a_0\ : bit;
+SIGNAL \cheap_pwm_1:MODIN1_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:b_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:b_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:b_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:b_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:b_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:s_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:s_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:s_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:s_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:s_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_1:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:a_6\ : bit;
+SIGNAL \cheap_pwm_1:MODIN2_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:a_5\ : bit;
+SIGNAL \cheap_pwm_1:MODIN2_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:a_4\ : bit;
+SIGNAL \cheap_pwm_1:MODIN2_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:a_3\ : bit;
+SIGNAL \cheap_pwm_1:MODIN2_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:a_2\ : bit;
+SIGNAL \cheap_pwm_1:MODIN2_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:a_1\ : bit;
+SIGNAL \cheap_pwm_1:MODIN2_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:a_0\ : bit;
+SIGNAL \cheap_pwm_1:MODIN2_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:b_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:b_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:b_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:b_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:b_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:b_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:b_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:s_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:s_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:s_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:s_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:s_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:s_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:s_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_2:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:a_6\ : bit;
+SIGNAL \cheap_pwm_1:MODIN3_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:a_5\ : bit;
+SIGNAL \cheap_pwm_1:MODIN3_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:a_4\ : bit;
+SIGNAL \cheap_pwm_1:MODIN3_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:a_3\ : bit;
+SIGNAL \cheap_pwm_1:MODIN3_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:a_2\ : bit;
+SIGNAL \cheap_pwm_1:MODIN3_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:a_1\ : bit;
+SIGNAL \cheap_pwm_1:MODIN3_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:a_0\ : bit;
+SIGNAL \cheap_pwm_1:MODIN3_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:b_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:b_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:b_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:b_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:b_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:b_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:b_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:s_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:s_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:s_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:s_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:s_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:s_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:s_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_3:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:a_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:a_6\ : bit;
+SIGNAL \cheap_pwm_1:MODIN4_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:a_5\ : bit;
+SIGNAL \cheap_pwm_1:MODIN4_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:a_4\ : bit;
+SIGNAL \cheap_pwm_1:MODIN4_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:a_3\ : bit;
+SIGNAL \cheap_pwm_1:MODIN4_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:a_2\ : bit;
+SIGNAL \cheap_pwm_1:MODIN4_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:a_1\ : bit;
+SIGNAL \cheap_pwm_1:MODIN4_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:a_0\ : bit;
+SIGNAL \cheap_pwm_1:MODIN4_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:b_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:b_6\ : bit;
+SIGNAL \cheap_pwm_1:MODIN5_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:b_5\ : bit;
+SIGNAL \cheap_pwm_1:MODIN5_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:b_4\ : bit;
+SIGNAL \cheap_pwm_1:MODIN5_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:b_3\ : bit;
+SIGNAL \cheap_pwm_1:MODIN5_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:b_2\ : bit;
+SIGNAL \cheap_pwm_1:MODIN5_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:b_1\ : bit;
+SIGNAL \cheap_pwm_1:MODIN5_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:b_0\ : bit;
+SIGNAL \cheap_pwm_1:MODIN5_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:s_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:s_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:s_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:s_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:s_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:s_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:s_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:s_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:switch\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:atmp_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:atmp_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:atmp_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:atmp_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:atmp_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:atmp_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:atmp_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:atmp_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:btmp_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:btmp_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:btmp_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:btmp_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:btmp_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:btmp_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:btmp_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:btmp_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:ci_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:tmpadd_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:tmpadd_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:tmpadd_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:tmpadd_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:tmpadd_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:tmpadd_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:tmpadd_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:tmpadd_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_8\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:rtmp_8\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:tmpadd_8\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:rtmp_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:rtmp_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:rtmp_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:rtmp_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:rtmp_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:rtmp_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:rtmp_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:rtmp_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:c_8\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:c_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:c_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:c_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:c_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:c_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:c_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:c_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:c_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(0)(0)_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(0)(0)_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(0)(0)_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(0)(0)_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(0)(0)_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(0)(0)_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(0)(0)_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(0)(0)_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:c(0)_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(1)(0)_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(1)(0)_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(1)(0)_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(1)(0)_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(1)(0)_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(1)(0)_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(1)(0)_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:s(1)(0)_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:c(1)_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:tmp_sum_7\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:tmp_sum_6\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:tmp_sum_5\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:tmp_sum_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:tmp_sum_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:tmp_sum_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:tmp_sum_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:tmp_sum_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:cout\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:cout\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:aov\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:bov\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:sov\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:overflow\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:overflow\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:newa_4\ : bit;
+SIGNAL \cheap_pwm_1:MODIN6_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:newa_3\ : bit;
+SIGNAL \cheap_pwm_1:MODIN6_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:newa_2\ : bit;
+SIGNAL \cheap_pwm_1:MODIN6_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:newa_1\ : bit;
+SIGNAL \cheap_pwm_1:MODIN6_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:newa_0\ : bit;
+SIGNAL \cheap_pwm_1:MODIN6_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:newb_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:newb_3\ : bit;
+SIGNAL \cheap_pwm_1:MODIN7_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:newb_2\ : bit;
+SIGNAL \cheap_pwm_1:MODIN7_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:newb_1\ : bit;
+SIGNAL \cheap_pwm_1:MODIN7_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:newb_0\ : bit;
+SIGNAL \cheap_pwm_1:MODIN7_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:dataa_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:dataa_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:dataa_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:dataa_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:dataa_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:datab_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:datab_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:datab_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:datab_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:datab_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:a_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:a_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:a_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:a_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:a_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:b_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:b_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:b_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:b_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:b_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:xnor_array_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:xnor_array_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:xnor_array_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:xnor_array_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:xnor_array_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:aeqb_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:eq_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:eq_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:eq_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:eq_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:eq_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:eqi_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:aeqb_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:albi_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:agbi_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lt_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gt_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lt_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gt_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lti_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gti_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:albi_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:agbi_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lt_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gt_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lt_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gt_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lt_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gt_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lti_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gti_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:albi_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:agbi_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:xeq\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:xneq\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:xlt\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:xlte\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:xgt\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:g1:a0:xgte\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_5:lt\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_5:lt\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_5:eq\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_5:eq\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_5:gt\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_5:gt\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_5:lte\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_5:lte\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_5:neq\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_5:neq\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:newa_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:newa_3\ : bit;
+SIGNAL \cheap_pwm_1:MODIN8_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:newa_2\ : bit;
+SIGNAL \cheap_pwm_1:MODIN8_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:newa_1\ : bit;
+SIGNAL \cheap_pwm_1:MODIN8_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:newa_0\ : bit;
+SIGNAL \cheap_pwm_1:MODIN8_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:newb_4\ : bit;
+SIGNAL \cheap_pwm_1:MODIN9_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:newb_3\ : bit;
+SIGNAL \cheap_pwm_1:MODIN9_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:newb_2\ : bit;
+SIGNAL \cheap_pwm_1:MODIN9_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:newb_1\ : bit;
+SIGNAL \cheap_pwm_1:MODIN9_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:newb_0\ : bit;
+SIGNAL \cheap_pwm_1:MODIN9_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:dataa_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:dataa_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:dataa_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:dataa_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:dataa_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:datab_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:datab_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:datab_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:datab_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:datab_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:a_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:a_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:a_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:a_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:a_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:b_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:b_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:b_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:b_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:b_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:xnor_array_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:xnor_array_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:xnor_array_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:xnor_array_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:xnor_array_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:aeqb_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:eq_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:eq_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:eq_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:eq_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:eq_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:eqi_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:aeqb_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:albi_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:agbi_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:lt_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:gt_3\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:lt_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:gt_4\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:lti_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:gti_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:albi_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:agbi_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:lt_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:gt_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:lt_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:gt_1\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:lt_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:gt_2\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:lti_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:gti_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:albi_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:gx:u0:agbi_0\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:xeq\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:xneq\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:xlt\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:xlte\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:xgt\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:g1:a0:xgte\ : bit;
+SIGNAL \cheap_pwm_1:MODULE_6:lt\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_6:lt\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_6:eq\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_6:eq\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_6:gt\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_6:gt\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_6:lte\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_6:lte\:SIGNAL IS 2;
+SIGNAL \cheap_pwm_1:MODULE_6:neq\ : bit;
+ATTRIBUTE port_state_att of \cheap_pwm_1:MODULE_6:neq\:SIGNAL IS 2;
+SIGNAL tmpOE__PWM_OUT_net_0 : bit;
+SIGNAL tmpFB_0__PWM_OUT_net_0 : bit;
+SIGNAL tmpIO_0__PWM_OUT_net_0 : bit;
+TERMINAL tmpSIOVREF__PWM_OUT_net_0 : bit;
+SIGNAL zero : bit;
+SIGNAL one : bit;
+SIGNAL tmpINTERRUPT_0__PWM_OUT_net_0 : bit;
+SIGNAL tmpOE__Pin_2_net_0 : bit;
+SIGNAL tmpFB_0__Pin_2_net_0 : bit;
+SIGNAL tmpIO_0__Pin_2_net_0 : bit;
+TERMINAL tmpSIOVREF__Pin_2_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__Pin_2_net_0 : bit;
+SIGNAL \cheap_pwm_1:period_counter_4\\D\ : bit;
+SIGNAL \cheap_pwm_1:period_counter_3\\D\ : bit;
+SIGNAL \cheap_pwm_1:period_counter_2\\D\ : bit;
+SIGNAL \cheap_pwm_1:period_counter_1\\D\ : bit;
+SIGNAL \cheap_pwm_1:period_counter_0\\D\ : bit;
+SIGNAL \cheap_pwm_1:up_time_6\\D\ : bit;
+SIGNAL \cheap_pwm_1:up_time_5\\D\ : bit;
+SIGNAL \cheap_pwm_1:up_time_4\\D\ : bit;
+SIGNAL \cheap_pwm_1:up_time_3\\D\ : bit;
+SIGNAL \cheap_pwm_1:up_time_2\\D\ : bit;
+SIGNAL \cheap_pwm_1:up_time_1\\D\ : bit;
+SIGNAL \cheap_pwm_1:up_time_0\\D\ : bit;
+SIGNAL \cheap_pwm_1:down_time_6\\D\ : bit;
+SIGNAL \cheap_pwm_1:down_time_5\\D\ : bit;
+SIGNAL \cheap_pwm_1:down_time_4\\D\ : bit;
+SIGNAL \cheap_pwm_1:down_time_3\\D\ : bit;
+SIGNAL \cheap_pwm_1:down_time_2\\D\ : bit;
+SIGNAL \cheap_pwm_1:down_time_1\\D\ : bit;
+SIGNAL \cheap_pwm_1:down_time_0\\D\ : bit;
+SIGNAL \cheap_pwm_1:all_time_7\\D\ : bit;
+SIGNAL \cheap_pwm_1:all_time_6\\D\ : bit;
+SIGNAL \cheap_pwm_1:all_time_5\\D\ : bit;
+SIGNAL \cheap_pwm_1:all_time_4\\D\ : bit;
+SIGNAL \cheap_pwm_1:all_time_3\\D\ : bit;
+SIGNAL \cheap_pwm_1:all_time_2\\D\ : bit;
+SIGNAL \cheap_pwm_1:all_time_1\\D\ : bit;
+SIGNAL \cheap_pwm_1:all_time_0\\D\ : bit;
+SIGNAL Net_4D : bit;
+BEGIN
+
+\cheap_pwm_1:period_counter_4\\D\ <= ((not \cheap_pwm_1:period_counter_4\ and \cheap_pwm_1:period_counter_3\ and \cheap_pwm_1:period_counter_2\ and \cheap_pwm_1:period_counter_1\ and \cheap_pwm_1:period_counter_0\)
+	OR (not \cheap_pwm_1:period_counter_0\ and \cheap_pwm_1:period_counter_4\)
+	OR (not \cheap_pwm_1:period_counter_1\ and \cheap_pwm_1:period_counter_4\)
+	OR (not \cheap_pwm_1:period_counter_2\ and \cheap_pwm_1:period_counter_4\)
+	OR (not \cheap_pwm_1:period_counter_3\ and \cheap_pwm_1:period_counter_4\));
+
+\cheap_pwm_1:period_counter_3\\D\ <= ((not \cheap_pwm_1:period_counter_3\ and \cheap_pwm_1:period_counter_2\ and \cheap_pwm_1:period_counter_1\ and \cheap_pwm_1:period_counter_0\)
+	OR (not \cheap_pwm_1:period_counter_0\ and \cheap_pwm_1:period_counter_3\)
+	OR (not \cheap_pwm_1:period_counter_1\ and \cheap_pwm_1:period_counter_3\)
+	OR (not \cheap_pwm_1:period_counter_2\ and \cheap_pwm_1:period_counter_3\));
+
+\cheap_pwm_1:period_counter_2\\D\ <= ((not \cheap_pwm_1:period_counter_2\ and \cheap_pwm_1:period_counter_1\ and \cheap_pwm_1:period_counter_0\)
+	OR (not \cheap_pwm_1:period_counter_0\ and \cheap_pwm_1:period_counter_2\)
+	OR (not \cheap_pwm_1:period_counter_1\ and \cheap_pwm_1:period_counter_2\));
+
+\cheap_pwm_1:period_counter_1\\D\ <= ((not \cheap_pwm_1:period_counter_0\ and \cheap_pwm_1:period_counter_1\)
+	OR (not \cheap_pwm_1:period_counter_1\ and \cheap_pwm_1:period_counter_0\));
+
+\cheap_pwm_1:period_counter_0\\D\ <= (not \cheap_pwm_1:period_counter_0\);
+
+\cheap_pwm_1:up_time_6\\D\ <= ((not \cheap_pwm_1:up_time_6\ and Net_35 and \cheap_pwm_1:up_time_5\ and \cheap_pwm_1:up_time_4\ and \cheap_pwm_1:up_time_3\ and \cheap_pwm_1:up_time_2\ and \cheap_pwm_1:up_time_1\ and \cheap_pwm_1:up_time_0\)
+	OR (not \cheap_pwm_1:up_time_0\ and \cheap_pwm_1:up_time_6\)
+	OR (not \cheap_pwm_1:up_time_1\ and \cheap_pwm_1:up_time_6\)
+	OR (not \cheap_pwm_1:up_time_2\ and \cheap_pwm_1:up_time_6\)
+	OR (not \cheap_pwm_1:up_time_3\ and \cheap_pwm_1:up_time_6\)
+	OR (not \cheap_pwm_1:up_time_4\ and \cheap_pwm_1:up_time_6\)
+	OR (not \cheap_pwm_1:up_time_5\ and \cheap_pwm_1:up_time_6\)
+	OR (not Net_35 and \cheap_pwm_1:up_time_6\));
+
+\cheap_pwm_1:up_time_5\\D\ <= ((not \cheap_pwm_1:up_time_5\ and Net_35 and \cheap_pwm_1:up_time_4\ and \cheap_pwm_1:up_time_3\ and \cheap_pwm_1:up_time_2\ and \cheap_pwm_1:up_time_1\ and \cheap_pwm_1:up_time_0\)
+	OR (not \cheap_pwm_1:up_time_0\ and \cheap_pwm_1:up_time_5\)
+	OR (not \cheap_pwm_1:up_time_1\ and \cheap_pwm_1:up_time_5\)
+	OR (not \cheap_pwm_1:up_time_2\ and \cheap_pwm_1:up_time_5\)
+	OR (not \cheap_pwm_1:up_time_3\ and \cheap_pwm_1:up_time_5\)
+	OR (not \cheap_pwm_1:up_time_4\ and \cheap_pwm_1:up_time_5\)
+	OR (not Net_35 and \cheap_pwm_1:up_time_5\));
+
+\cheap_pwm_1:up_time_4\\D\ <= ((not \cheap_pwm_1:up_time_4\ and Net_35 and \cheap_pwm_1:up_time_3\ and \cheap_pwm_1:up_time_2\ and \cheap_pwm_1:up_time_1\ and \cheap_pwm_1:up_time_0\)
+	OR (not \cheap_pwm_1:up_time_0\ and \cheap_pwm_1:up_time_4\)
+	OR (not \cheap_pwm_1:up_time_1\ and \cheap_pwm_1:up_time_4\)
+	OR (not \cheap_pwm_1:up_time_2\ and \cheap_pwm_1:up_time_4\)
+	OR (not \cheap_pwm_1:up_time_3\ and \cheap_pwm_1:up_time_4\)
+	OR (not Net_35 and \cheap_pwm_1:up_time_4\));
+
+\cheap_pwm_1:up_time_3\\D\ <= ((not \cheap_pwm_1:up_time_3\ and Net_35 and \cheap_pwm_1:up_time_2\ and \cheap_pwm_1:up_time_1\ and \cheap_pwm_1:up_time_0\)
+	OR (not \cheap_pwm_1:up_time_0\ and \cheap_pwm_1:up_time_3\)
+	OR (not \cheap_pwm_1:up_time_1\ and \cheap_pwm_1:up_time_3\)
+	OR (not \cheap_pwm_1:up_time_2\ and \cheap_pwm_1:up_time_3\)
+	OR (not Net_35 and \cheap_pwm_1:up_time_3\));
+
+\cheap_pwm_1:up_time_2\\D\ <= ((not \cheap_pwm_1:up_time_2\ and Net_35 and \cheap_pwm_1:up_time_1\ and \cheap_pwm_1:up_time_0\)
+	OR (not \cheap_pwm_1:up_time_0\ and \cheap_pwm_1:up_time_2\)
+	OR (not \cheap_pwm_1:up_time_1\ and \cheap_pwm_1:up_time_2\)
+	OR (not Net_35 and \cheap_pwm_1:up_time_2\));
+
+\cheap_pwm_1:up_time_1\\D\ <= ((not \cheap_pwm_1:up_time_1\ and Net_35 and \cheap_pwm_1:up_time_0\)
+	OR (not \cheap_pwm_1:up_time_0\ and \cheap_pwm_1:up_time_1\)
+	OR (not Net_35 and \cheap_pwm_1:up_time_1\));
+
+\cheap_pwm_1:up_time_0\\D\ <= ((not \cheap_pwm_1:up_time_0\ and Net_35)
+	OR (not Net_35 and \cheap_pwm_1:up_time_0\));
+
+\cheap_pwm_1:down_time_6\\D\ <= ((not Net_35 and not \cheap_pwm_1:down_time_6\ and \cheap_pwm_1:down_time_5\ and \cheap_pwm_1:down_time_4\ and \cheap_pwm_1:down_time_3\ and \cheap_pwm_1:down_time_2\ and \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_0\)
+	OR (not \cheap_pwm_1:down_time_0\ and \cheap_pwm_1:down_time_6\)
+	OR (not \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_6\)
+	OR (not \cheap_pwm_1:down_time_2\ and \cheap_pwm_1:down_time_6\)
+	OR (not \cheap_pwm_1:down_time_3\ and \cheap_pwm_1:down_time_6\)
+	OR (not \cheap_pwm_1:down_time_4\ and \cheap_pwm_1:down_time_6\)
+	OR (not \cheap_pwm_1:down_time_5\ and \cheap_pwm_1:down_time_6\)
+	OR (Net_35 and \cheap_pwm_1:down_time_6\));
+
+\cheap_pwm_1:down_time_5\\D\ <= ((not Net_35 and not \cheap_pwm_1:down_time_5\ and \cheap_pwm_1:down_time_4\ and \cheap_pwm_1:down_time_3\ and \cheap_pwm_1:down_time_2\ and \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_0\)
+	OR (not \cheap_pwm_1:down_time_0\ and \cheap_pwm_1:down_time_5\)
+	OR (not \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_5\)
+	OR (not \cheap_pwm_1:down_time_2\ and \cheap_pwm_1:down_time_5\)
+	OR (not \cheap_pwm_1:down_time_3\ and \cheap_pwm_1:down_time_5\)
+	OR (not \cheap_pwm_1:down_time_4\ and \cheap_pwm_1:down_time_5\)
+	OR (Net_35 and \cheap_pwm_1:down_time_5\));
+
+\cheap_pwm_1:down_time_4\\D\ <= ((not Net_35 and not \cheap_pwm_1:down_time_4\ and \cheap_pwm_1:down_time_3\ and \cheap_pwm_1:down_time_2\ and \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_0\)
+	OR (not \cheap_pwm_1:down_time_0\ and \cheap_pwm_1:down_time_4\)
+	OR (not \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_4\)
+	OR (not \cheap_pwm_1:down_time_2\ and \cheap_pwm_1:down_time_4\)
+	OR (not \cheap_pwm_1:down_time_3\ and \cheap_pwm_1:down_time_4\)
+	OR (Net_35 and \cheap_pwm_1:down_time_4\));
+
+\cheap_pwm_1:down_time_3\\D\ <= ((not Net_35 and not \cheap_pwm_1:down_time_3\ and \cheap_pwm_1:down_time_2\ and \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_0\)
+	OR (not \cheap_pwm_1:down_time_0\ and \cheap_pwm_1:down_time_3\)
+	OR (not \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_3\)
+	OR (not \cheap_pwm_1:down_time_2\ and \cheap_pwm_1:down_time_3\)
+	OR (Net_35 and \cheap_pwm_1:down_time_3\));
+
+\cheap_pwm_1:down_time_2\\D\ <= ((not Net_35 and not \cheap_pwm_1:down_time_2\ and \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_0\)
+	OR (not \cheap_pwm_1:down_time_0\ and \cheap_pwm_1:down_time_2\)
+	OR (not \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_2\)
+	OR (Net_35 and \cheap_pwm_1:down_time_2\));
+
+\cheap_pwm_1:down_time_1\\D\ <= ((not Net_35 and not \cheap_pwm_1:down_time_1\ and \cheap_pwm_1:down_time_0\)
+	OR (not \cheap_pwm_1:down_time_0\ and \cheap_pwm_1:down_time_1\)
+	OR (Net_35 and \cheap_pwm_1:down_time_1\));
+
+\cheap_pwm_1:down_time_0\\D\ <= ((not Net_35 and not \cheap_pwm_1:down_time_0\)
+	OR (Net_35 and \cheap_pwm_1:down_time_0\));
+
+\cheap_pwm_1:pwm\ <= (\cheap_pwm_1:MODULE_6:g1:a0:gx:u0:lti_0\
+	OR not \cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lti_0\
+	OR \cheap_pwm_1:period_counter_3\
+	OR \cheap_pwm_1:period_counter_4\);
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_7\ <= ((\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_7\ and \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_7\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_7\ <= ((not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_7\ and not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_7\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_6\ <= ((\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_6\ and \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_6\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_6\ <= ((not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_6\ and not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_6\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_5\ <= ((\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_5\ and \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_5\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_5\ <= ((not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_5\ and not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_5\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_4\ <= ((\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_4\ and \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_4\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_4\ <= ((not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_4\ and not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_4\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_3\ <= ((\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_3\ and \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_3\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_3\ <= ((not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_3\ and not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_3\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_2\ <= ((\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_2\ and \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_2\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_2\ <= ((not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_2\ and not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_2\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_1\ <= ((\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_1\ and \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_1\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_1\ <= ((not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_1\ and not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_1\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_0\ <= ((\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_0\ and \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_0\));
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_0\ <= ((not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_0\ and not \cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_0\));
+
+\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lt_2\ <= ((not \cheap_pwm_1:period_counter_2\ and not \cheap_pwm_1:period_counter_1\ and not \cheap_pwm_1:period_counter_0\));
+
+\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gt_2\ <= (\cheap_pwm_1:period_counter_1\
+	OR \cheap_pwm_1:period_counter_2\);
+
+Net_55_3 <=  ('0') ;
+
+Net_56 <=  ('1') ;
+
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(7):ai\:cy_buf
+	PORT MAP(x=>Net_55_3,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_7\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(7):bi\:cy_buf
+	PORT MAP(x=>Net_55_3,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_7\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(6):ai\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:up_time_6\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_6\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(6):bi\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:down_time_6\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_6\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(5):ai\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:up_time_5\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_5\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(5):bi\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:down_time_5\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_5\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(4):ai\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:up_time_4\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_4\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(4):bi\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:down_time_4\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_4\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(3):ai\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:up_time_3\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_3\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(3):bi\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:down_time_3\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_3\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(2):ai\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:up_time_2\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_2\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(2):bi\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:down_time_2\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_2\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(1):ai\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:up_time_1\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_1\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(1):bi\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:down_time_1\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_1\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(0):ai\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:up_time_0\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdataa_0\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ub(0):bi\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:down_time_0\,
+		y=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:bdatab_0\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ga:g2:frst\:cy_psoc3_carry
+	PORT MAP(cin=>Net_55_3,
+		cpt0=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_0\,
+		cpt1=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_0\,
+		sum=>\cheap_pwm_1:MODULE_4:g1:a0:s_0\,
+		cout=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_0\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ga:g2:i(1):a\:cy_psoc3_carry
+	PORT MAP(cin=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_0\,
+		cpt0=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_1\,
+		cpt1=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_1\,
+		sum=>\cheap_pwm_1:MODULE_4:g1:a0:s_1\,
+		cout=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_1\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ga:g2:i(2):a\:cy_psoc3_carry
+	PORT MAP(cin=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_1\,
+		cpt0=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_2\,
+		cpt1=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_2\,
+		sum=>\cheap_pwm_1:MODULE_4:g1:a0:s_2\,
+		cout=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_2\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ga:g2:i(3):a\:cy_psoc3_carry
+	PORT MAP(cin=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_2\,
+		cpt0=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_3\,
+		cpt1=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_3\,
+		sum=>\cheap_pwm_1:MODULE_4:g1:a0:s_3\,
+		cout=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_3\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ga:g2:i(4):a\:cy_psoc3_carry
+	PORT MAP(cin=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_3\,
+		cpt0=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_4\,
+		cpt1=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_4\,
+		sum=>\cheap_pwm_1:MODULE_4:g1:a0:s_4\,
+		cout=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_4\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ga:g2:i(5):a\:cy_psoc3_carry
+	PORT MAP(cin=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_4\,
+		cpt0=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_5\,
+		cpt1=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_5\,
+		sum=>\cheap_pwm_1:MODULE_4:g1:a0:s_5\,
+		cout=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_5\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ga:g2:i(6):a\:cy_psoc3_carry
+	PORT MAP(cin=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_5\,
+		cpt0=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_6\,
+		cpt1=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_6\,
+		sum=>\cheap_pwm_1:MODULE_4:g1:a0:s_6\,
+		cout=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_6\);
+\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:ga:g2:i(7):a\:cy_psoc3_carry
+	PORT MAP(cin=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_6\,
+		cpt0=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt0_7\,
+		cpt1=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:a_cpt1_7\,
+		sum=>\cheap_pwm_1:MODULE_4:g1:a0:s_7\,
+		cout=>\cheap_pwm_1:MODULE_4:g1:a0:g0:u0:gof:g_arith(0):ga:cadd_7\);
+\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gne(0):c3:u1\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lt_2\,
+		y=>\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lti_0\);
+\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gne(0):c3:u2\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gt_2\,
+		y=>\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gti_0\);
+\cheap_pwm_1:MODULE_6:g1:a0:gx:u0:gne(0):c3:u1\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gt_2\,
+		y=>\cheap_pwm_1:MODULE_6:g1:a0:gx:u0:lti_0\);
+\cheap_pwm_1:MODULE_6:g1:a0:gx:u0:gne(0):c3:u2\:cy_buf
+	PORT MAP(x=>\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lt_2\,
+		y=>\cheap_pwm_1:MODULE_6:g1:a0:gx:u0:gti_0\);
+Clock_1:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"f8e983a3-0433-4e5f-915d-aac47ec3df2f",
+		source_clock_id=>"",
+		divisor=>0,
+		period=>"21276595744.6809",
+		is_direct=>'0',
+		is_digital=>'1')
+	PORT MAP(clock_out=>Net_35,
+		dig_domain_out=>open);
+Clock_2:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"601d6eeb-8a23-4bef-ad8b-2753817fd049",
+		source_clock_id=>"",
+		divisor=>0,
+		period=>"212765957.446809",
+		is_direct=>'0',
+		is_digital=>'1')
+	PORT MAP(clock_out=>Net_52,
+		dig_domain_out=>open);
+PWM_OUT:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"e851a3b9-efb8-48be-bbb8-b303b216c393",
+		drive_mode=>"110",
+		ibuf_enabled=>"1",
+		init_dr_st=>"0",
+		input_sync=>"1",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"1",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"O",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(Net_56),
+		y=>Net_35,
+		fb=>(tmpFB_0__PWM_OUT_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__PWM_OUT_net_0),
+		siovref=>(tmpSIOVREF__PWM_OUT_net_0),
+		annotation=>(open),
+		in_clock=>Net_55_3,
+		in_clock_en=>Net_56,
+		in_reset=>Net_55_3,
+		out_clock=>Net_55_3,
+		out_clock_en=>Net_56,
+		out_reset=>Net_55_3,
+		interrupt=>tmpINTERRUPT_0__PWM_OUT_net_0);
+Pin_2:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"b9ed4d22-c5fb-4dcc-88af-86489e948bab",
+		drive_mode=>"110",
+		ibuf_enabled=>"1",
+		init_dr_st=>"0",
+		input_sync=>"1",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"1",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"O",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(Net_56),
+		y=>Net_4,
+		fb=>(tmpFB_0__Pin_2_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__Pin_2_net_0),
+		siovref=>(tmpSIOVREF__Pin_2_net_0),
+		annotation=>(open),
+		in_clock=>Net_55_3,
+		in_clock_en=>Net_56,
+		in_reset=>Net_55_3,
+		out_clock=>Net_55_3,
+		out_clock_en=>Net_56,
+		out_reset=>Net_55_3,
+		interrupt=>tmpINTERRUPT_0__Pin_2_net_0);
+\cheap_pwm_1:period_counter_4\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:period_counter_4\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:period_counter_4\);
+\cheap_pwm_1:period_counter_3\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:period_counter_3\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:period_counter_3\);
+\cheap_pwm_1:period_counter_2\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:period_counter_2\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:period_counter_2\);
+\cheap_pwm_1:period_counter_1\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:period_counter_1\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:period_counter_1\);
+\cheap_pwm_1:period_counter_0\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:period_counter_0\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:period_counter_0\);
+\cheap_pwm_1:up_time_6\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:up_time_6\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:up_time_6\);
+\cheap_pwm_1:up_time_5\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:up_time_5\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:up_time_5\);
+\cheap_pwm_1:up_time_4\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:up_time_4\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:up_time_4\);
+\cheap_pwm_1:up_time_3\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:up_time_3\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:up_time_3\);
+\cheap_pwm_1:up_time_2\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:up_time_2\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:up_time_2\);
+\cheap_pwm_1:up_time_1\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:up_time_1\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:up_time_1\);
+\cheap_pwm_1:up_time_0\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:up_time_0\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:up_time_0\);
+\cheap_pwm_1:down_time_6\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:down_time_6\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:down_time_6\);
+\cheap_pwm_1:down_time_5\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:down_time_5\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:down_time_5\);
+\cheap_pwm_1:down_time_4\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:down_time_4\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:down_time_4\);
+\cheap_pwm_1:down_time_3\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:down_time_3\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:down_time_3\);
+\cheap_pwm_1:down_time_2\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:down_time_2\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:down_time_2\);
+\cheap_pwm_1:down_time_1\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:down_time_1\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:down_time_1\);
+\cheap_pwm_1:down_time_0\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:down_time_0\\D\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:down_time_0\);
+\cheap_pwm_1:all_time_7\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:MODULE_4:g1:a0:s_7\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:all_time_7\);
+\cheap_pwm_1:all_time_6\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:MODULE_4:g1:a0:s_6\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:all_time_6\);
+\cheap_pwm_1:all_time_5\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:MODULE_4:g1:a0:s_5\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:all_time_5\);
+\cheap_pwm_1:all_time_4\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:MODULE_4:g1:a0:s_4\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:all_time_4\);
+\cheap_pwm_1:all_time_3\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:MODULE_4:g1:a0:s_3\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:all_time_3\);
+\cheap_pwm_1:all_time_2\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:MODULE_4:g1:a0:s_2\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:all_time_2\);
+\cheap_pwm_1:all_time_1\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:MODULE_4:g1:a0:s_1\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:all_time_1\);
+\cheap_pwm_1:all_time_0\:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:MODULE_4:g1:a0:s_0\,
+		clk=>Net_52,
+		q=>\cheap_pwm_1:all_time_0\);
+Net_4:cy_dff
+	PORT MAP(d=>\cheap_pwm_1:pwm\,
+		clk=>Net_52,
+		q=>Net_4);
+
+END R_T_L;

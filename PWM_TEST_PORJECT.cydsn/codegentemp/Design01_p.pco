@@ -1,0 +1,36 @@
+dont_use_io iocell 1 0
+dont_use_io iocell 1 1
+dont_use_io iocell 1 3
+set_location "\cheap_pwm_1:MODULE_4:g1:a0:s_3\" macrocell 1 3 0 3
+set_location "\cheap_pwm_1:MODULE_4:g1:a0:s_2\" macrocell 1 3 0 2
+set_location "\cheap_pwm_1:MODULE_4:g1:a0:s_4\" macrocell 1 3 1 0
+set_location "\cheap_pwm_1:down_time_1\" macrocell 0 3 1 1
+set_location "\cheap_pwm_1:up_time_3\" macrocell 1 4 0 3
+set_location "\cheap_pwm_1:up_time_0\" macrocell 1 4 1 2
+set_location "\cheap_pwm_1:MODULE_4:g1:a0:s_7\" macrocell 1 3 1 3
+set_location "\cheap_pwm_1:period_counter_2\" macrocell 0 4 0 3
+set_location "\cheap_pwm_1:MODULE_4:g1:a0:s_5\" macrocell 1 3 1 1
+set_location "\cheap_pwm_1:up_time_6\" macrocell 1 4 0 0
+set_location "\cheap_pwm_1:up_time_2\" macrocell 1 4 1 0
+set_location "\cheap_pwm_1:MODULE_4:g1:a0:s_0\" macrocell 1 3 0 0
+set_location "\cheap_pwm_1:period_counter_3\" macrocell 0 4 1 3
+set_location "\cheap_pwm_1:down_time_3\" macrocell 0 3 0 3
+set_location "\cheap_pwm_1:up_time_5\" macrocell 1 4 0 1
+set_location "\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:lt_2\" macrocell 0 4 0 2
+set_location "Net_4" macrocell 0 4 0 0
+set_location "\cheap_pwm_1:MODULE_4:g1:a0:s_6\" macrocell 1 3 1 2
+set_location "\cheap_pwm_1:up_time_4\" macrocell 1 4 0 2
+set_location "\cheap_pwm_1:down_time_4\" macrocell 0 3 0 2
+set_location "\cheap_pwm_1:up_time_1\" macrocell 1 4 1 1
+set_location "\cheap_pwm_1:period_counter_0\" macrocell 0 4 1 1
+set_location "\cheap_pwm_1:period_counter_4\" macrocell 0 4 1 2
+set_location "\cheap_pwm_1:down_time_2\" macrocell 0 3 1 0
+set_location "\cheap_pwm_1:MODULE_4:g1:a0:s_1\" macrocell 1 3 0 1
+set_location "\cheap_pwm_1:down_time_5\" macrocell 0 3 0 1
+set_location "\cheap_pwm_1:down_time_6\" macrocell 0 3 0 0
+set_location "\cheap_pwm_1:down_time_0\" macrocell 0 3 1 2
+set_location "\cheap_pwm_1:MODULE_5:g1:a0:gx:u0:gt_2\" macrocell 0 4 0 1
+set_location "\cheap_pwm_1:period_counter_1\" macrocell 0 4 1 0
+set_io "Pin_2(0)" iocell 0 1
+set_location "ClockBlock" clockblockcell -1 -1 0
+set_io "PWM_OUT(0)" iocell 0 0
